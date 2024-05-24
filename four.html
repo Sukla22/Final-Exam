@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="one.html">Problem 1</a> |
+        <a href="two.html">Problem 2</a> |
+        <a href="three.html">Problem 3</a> |
+        <a href="four.html">Problem 4</a> |
+        <a href="five.html">Problem 5</a> |
+        <a href="six.html">Problem 6</a> |
+        <a href="seven.html">Problem 7</a> |
+        <a href="eight.html">Problem 8</a> |
+        <a href="vue/index.html" target="_blank">Problem 9</a>
+    </nav> 
+    <br><br>
+    <h1>Problem 4</h1><br>
+    <div>
+        <p id="b">This is a paragraph</p>
+        <button id="b1">Bold</button>
+        <button id="b2">Italic</button>
+        <button id="b3">Underline</button>
+    </div>
+    <script>
+        document.getElementById("b1").addEventListener("click",function(){
+            let x = document.getElementById("b");
+            x.innerHTML = "<b>This is a paragraph</b>";
+        });
+        document.getElementById("b2").addEventListener("click",function(){
+            let x = document.getElementById("b");
+            x.innerHTML = "<i>This is a paragraph</i>";
+        });
+        document.getElementById("b3").addEventListener("click",function(){
+            let x = document.getElementById("b");
+            x.innerHTML = "<u>This is a paragraph</u>";
+        });
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="one.html">Problem 1</a> |
+        <a href="two.html">Problem 2</a> |
+        <a href="three.html">Problem 3</a> |
+        <a href="four.html">Problem 4</a> |
+        <a href="five.html">Problem 5</a> |
+        <a href="six.html">Problem 6</a> |
+        <a href="seven.html">Problem 7</a> |
+        <a href="eight.html">Problem 8</a> |
+        <a href="vue/index.html" target="_blank">Problem 9</a>
+    </nav> 
+    <br><br>
+    <h1>Problem 2</h1><br>
+    <div>
+        <table border="1">
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Mobile</td>
+                <td>Email</td>
+            </tr>
+        </table>
+        <script>
+            fetch("https://codeandcareer.com/assignments/api/api.php",{mode:'no-cors'}).then(function(response){
+                return response.json();
+            }).then(function(data){
+             console.log(data);
+            let students = document.getElementById("students");
+            data.forEach((each_student,index)=>{
+                let row = students.insertRow(2+index);
+    
+                let td_1 = row.insertCell(0);
+                td_1.innerHTML = each_student.id;
+                
+                let td_2 = row.insertCell(1);
+                td_2.innerHTML = each_student.full_name;
+    
+                let td_3 = row.insertCell(2);
+                td_3.innerHTML = each_student.mobile;
+    
+                let td_4 = row.insertCell(3);
+                td_4.innerHTML = each_student.email;
+    
+            });
+        });
+        </script>
+    </div>
+</body>
+</html>

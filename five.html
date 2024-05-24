@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="one.html">Problem 1</a> |
+        <a href="two.html">Problem 2</a> |
+        <a href="three.html">Problem 3</a> |
+        <a href="four.html">Problem 4</a> |
+        <a href="five.html">Problem 5</a> |
+        <a href="six.html">Problem 6</a> |
+        <a href="seven.html">Problem 7</a> |
+        <a href="eight.html">Problem 8</a> |
+        <a href="vue/index.html" target="_blank">Problem 9</a>
+    </nav> 
+    <br><br>
+    <h1>Problem 5</h1><br>
+    <div>
+        <p>Your score is: <span  id="b1">0</span></p>
+        <button onclick="sum()">Increase</button>
+        <button onclick="red()">Decrease</button>
+    </div>
+    <script>
+        var x = 0;
+        document.getElementById("b1").innerHTML= x;
+        function sum(){
+            x= x+5;
+            document.getElementById("b1").innerHTML = x;
+        }
+        document.getElementById("b1").innerHTML= x;
+        function red(){
+            x= x-10;
+            document.getElementById("b1").innerHTML = x;
+        }
+        
+    </script>
+</body>
+</html>
